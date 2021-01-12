@@ -5,7 +5,7 @@ def getPass(n):
     characters = list('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*?')
     password = ''
     for x in range(int(n)):
-        spot = random.randint(1, len(characters))
+        spot = random.randint(1, (len(characters)-1))
         password += characters[spot]
     
     return password
